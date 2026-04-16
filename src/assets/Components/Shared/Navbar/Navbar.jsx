@@ -1,18 +1,20 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router';
 import navLogo from '../../../images/logo.png'
+import { FaGithub } from 'react-icons/fa';
 
 const Navbar = () => {
     const links = (
         <>
-        <li><NavLink to='/' className={({isActive})=> isActive ? "bg-linear-to-r from-[#632EE3] to-[#9F62F2] font-bold text-white rounded px-4 py-2" : "text-black font-bold"}>Home</NavLink></li>
-        <li><NavLink to='/apps' className={({isActive})=> isActive ? "bg-linear-to-r from-[#632EE3] to-[#9F62F2] font-bold text-white rounded px-4 py-2" : "text-black font-bold"}>Apps</NavLink></li>
-        <li><NavLink to='/installation' className={({isActive})=> isActive ? "bg-linear-to-r from-[#632EE3] to-[#9F62F2] font-bold text-white rounded px-4 py-2" : "text-black font-bold"}>Installation</NavLink></li>
-        <li><NavLink to='/dashboard' className={({isActive})=> isActive ? "bg-linear-to-r from-[#632EE3] to-[#9F62F2] font-bold text-white rounded px-4 py-2" : "text-black font-bold"}>Dashboard</NavLink></li>
+        <li><NavLink to='/' className={({isActive})=> isActive ? "bg-linear-to-r from-[#632EE3] to-[#9F62F2] font-bold text-white rounded px-4 py-2 cursor-pointer" : "text-black font-bold cursor-pointer"}>Home</NavLink></li>
+        <li><NavLink to='/apps' className={({isActive})=> isActive ? "bg-linear-to-r from-[#632EE3] to-[#9F62F2] font-bold text-white rounded px-4 py-2 cursor-pointer" : "text-black font-bold cursor-pointer"}>Apps</NavLink></li>
+        <li><NavLink to='/installation' className={({isActive})=> isActive ? "bg-linear-to-r from-[#632EE3] to-[#9F62F2] font-bold text-white rounded px-4 py-2 cursor-pointer" : "text-black font-bold cursor-pointer"}>Installation</NavLink></li>
+        <li><NavLink to='/dashboard' className={({isActive})=> isActive ? "bg-linear-to-r from-[#632EE3] to-[#9F62F2] font-bold text-white rounded px-4 py-2 cursor-pointer" : "text-black font-bold cursor-pointer"}>Dashboard</NavLink></li>
         </>
     )
     return (
-        <div className="navbar bg-base-100 shadow-sm">
+        <div className='shadow-sm bg-white'>
+            <div className="navbar w-11/12 lg:w-10/12 mx-auto">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -28,7 +30,7 @@ const Navbar = () => {
     </div>
     <Link to= '/' className='flex items-center gap-2.5'>
     <img className='w-10' src={navLogo} alt= {navLogo} />
-    <p className='bg-linear-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent leading-none text-lg font-bold'>App Store</p>
+    <p className='bg-linear-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent leading-none text-lg font-bold'>Apps Store</p>
     </Link>
   </div>
   <div className="navbar-center hidden lg:flex">
@@ -39,9 +41,10 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn">Button</a>
+    <a className=" bg-linear-to-r from-[#632EE3] to-[#9F62F2] font-bold text-white rounded px-4 py-2 cursor-pointer flex items-center gap-3"><FaGithub></FaGithub>Contribute</a>
   </div>
 </div>
+        </div>
     );
 };
 
