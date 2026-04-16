@@ -12,7 +12,7 @@ const Banner = () => {
                 <p className='text-[#627382] w-full lg:w-[850px] leading-7'>At HERO.IO, we craft innovative apps designed to make everyday life simpler, smarter, and more exciting.Our goal is to turn your ideas into digital experiences that truly make an impact.</p>
                <div className='flex justify-center items-center gap-4'>
                  <button className='flex items-center gap-3 text-lg font-bold cursor-pointer  border border-gray-300 rounded px-4 py-2 transition duration-300 hover:bg-linear-to-r from-[#632EE3] to-[#9F62F2] hover:text-white'><img src={playStore} alt="" /><span>Play Store</span></button>
-                <button className='flex items-center gap-3 text-lg font-bold cursor-pointer border border-gray-300 rounded px-4 py-2 transition duration-300 hover:bg-linear-to-r from-[#632EE3] to-[#9F62F2] hover:text-white '><img src={appStore} alt="" /><span>App Store</span></button>
+                <button  className='flex items-center gap-3 text-lg font-bold cursor-pointer border border-gray-300 rounded px-4 py-2 transition duration-300 hover:bg-linear-to-r from-[#632EE3] to-[#9F62F2] hover:text-white '><img src={appStore} alt="" /><span>App Store</span></button>
                </div>
                 </div>
                 <div>
